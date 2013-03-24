@@ -109,10 +109,13 @@ p, a {
     width: 100%;
     min-height: 100%;
     padding-top: 60px;
+    padding-bottom: 100px;
+    overflow: auto;
 }
 
 .inner-container {
     width: 986px;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -152,6 +155,52 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: -8px;
+}
+
+.card p {
+    font-size: 1.5em;
+}
+
+.entry ul {
+    margin: 0;
+    margin-top: 15px;
+    width: 60%;
+    float: right;
+    padding-left: 1em;
+    text-indent: -1.5em;
+}
+
+.entry ul li:before {
+    content: "\02B \020";
+}
+
+.entry a {
+    color: #fff3c6;
+    font-size: 1em;
+}
+
+.entry {
+    margin-bottom: 20px;
+    clear: both;
+}
+
+.entry li {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#hire-me {
+    background: url('../img/hireme.png') center center no-repeat;
+    width: 138px;
+    height: 138px;
+    position: fixed;
+    top: 80px;
+    left: 80px;
 }
 
 /* ==========================================================================
@@ -229,43 +278,19 @@ ul {
     color: #ff6b6b;
 }
 
-#experience .card h3 {
-    margin-top: 0;
-    margin-bottom: -8px;
-}
-
-#experience .card p {
-    font-size: 1.5em;
-}
-
-#experience ul {
-    margin: 0;
-    margin-top: 15px;
-    width: 60%;
-    float: right;
-    padding-left: 1em;
-    text-indent: -1.6em;
-}
-
-#experience ul li:before {
-    content: "\02B \020";
-}
-
-.entry {
-    margin-bottom: 20px;
-    clear: both;
-}
-
-.entry li {
-    font-size: 1.6em;
-}
-
 /* ==========================================================================
    Page 3 : Projects;
    ========================================================================== */
 
 #projects {
     background-color: #ffb969;
+}
+
+#projects .card {
+    width: 28%;
+    margin-top: 20px;
+    margin-left:12px;
+    color: #ffb969;
 }
 
 /* ==========================================================================
