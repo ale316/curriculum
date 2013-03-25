@@ -24,7 +24,7 @@ var loadCharts = function() {
 };
 
 $(window).scroll(function() {
-	if($(window).scrollTop() >= (skills.offset().top-skills.height())*0.5 && !chartLoaded) {
+	if($(window).scrollTop() >= (skills.offset().top-skills.height()*0.5) && !chartLoaded) {
 		loadCharts();
 		chartLoaded = true;
 	}

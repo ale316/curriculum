@@ -245,8 +245,8 @@ ul {
 
 #objective .card {
     color: #452e3c;
-    text-align: right;
-    width: 40%;
+    text-align: left;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -338,6 +338,22 @@ ul {
     background-color: #4ecdc4;
 }
 
+.uwaterloo {
+    margin-left: 110px;
+    margin-top: 30px;
+    width: 175px;
+    height: 210px;
+    background: url('../img/uwaterloologo.png') center center no-repeat;
+}
+
+#education p {
+    font-size: 1.5em;   
+}
+
+#education .right {
+    width: 60%;
+    margin-top: 70px;
+}
 
 
 /* ==========================================================================
