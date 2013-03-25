@@ -224,7 +224,7 @@ ul {
 #menu li:nth-child(1) { background-color: #452e3c; }
 #menu li:nth-child(2) { background-color: #ff6b6b; }
 #menu li:nth-child(3) { background-color: #ffb969; }
-#menu li:nth-child(4) { background-color: #f5e150; }
+#menu li:nth-child(4) { background-color: #f9d43d; }
 #menu li:nth-child(5) { background-color: #4ecdc4; }
 
 #menu a {
@@ -298,8 +298,37 @@ ul {
    ========================================================================== */
 
 #skills {
-    background-color: #f5e150;
+    background-color: #f9d43d;
 }
+
+#skills .card {
+    color: #f9d43d;
+    clear: both;
+}
+
+.line-chart {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.line-chart div {
+    font-family: 'intro_regular';
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 0.6em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.line-chart div:nth-child(1) { background-color: #FF6739;}
+.line-chart div:nth-child(2) { background-color: #FFB03F;}
+.line-chart div:nth-child(3) { background-color: #253D50;}
+.line-chart div:nth-child(4) { background-color: #6EC2EA;}
+.line-chart div:nth-child(5) { background-color: #FF6739;}
+.line-chart div:nth-child(6) { background-color: #FFB03F;}
+.line-chart div:nth-child(7) { background-color: #253D50;}
+.line-chart div:nth-child(8) { background-color: #6EC2EA;}
 
 /* ==========================================================================
    Page 5 : Education;
