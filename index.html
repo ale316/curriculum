@@ -14,15 +14,11 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+		<script src="js/vendor/jquery.min.js" ></script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="js/vendor/move.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-
 		<div id="container">
 			<!--<div id="hire-me"></div>-->
 			<div id="menu">
@@ -36,12 +32,18 @@
 			</div>
 			<div id="objective" class="page">
 				<div class="inner-container">
-					<h1>Alessandro<br>Marin<img src="img/resume.png" alt="resume"></h1>
-					<p><span>I'm looking for</span> an internship from May to August 2013 at a startup that solves relevant and challenging problems.</p>
+					<h1>Alessandro<br>Marin <span class="social"><a class="github" href="#">github</a><a class="linkedin" href="#">linkedin</a></span></h1>
+					<div class="left">
+						<p><span>I am a full stack dev</span> with a sense of design. Made in Italy and currently studying at the University of Waterloo.</p>
+						<p><span>I love</span> learning, being challenged and making things. I also have a passion for travelling, good food and great music.</p>
+					</div>
 					<div class="card left">
-						<h2>Contact Info</h2>
-						<a href="mailto:amarin@uwaterloo.ca">amarin@uwaterlo.ca</a>
-						<p>+1 226 978 4775</p>
+						<h2>Contact</h2>
+						<div class="right">
+							<a href="mailto:amarin@uwaterloo.ca">amarin@uwaterloo.ca</a>
+							<!--<p>+1 226 978 4775</p>-->
+						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -51,23 +53,38 @@
 					<h1>Experience</h1>
 					<div class="entry">
 						<div class="card left">
-							<h3>Reap Waterloo</h3>
-							<p>Developer, consultant</p>
+							<h3>Quarry</h3>
+							<p>Creative coder</p>
+							<p>May 2013 - present</p>
 						</div>
 						<ul>
-							<li>Developed a <a href="http://www.reapwaterloo.ca/panorama.php" target="_blank">360&deg panorama picture viewer</a> with pin support and customized admin panel in pure javascript, PHP, HTML, CSS integrating with Wordpress and using SQLite.</li>
-							<li>Wrote a script using the Python Imaging Library (PIL) to slice a large picture in sets of tiles for different zoom levels.</li>
-							<li>Developed a 2D art gallery with procedural loading, written in javascript, interacting with a MySql database.</li>
-							<li>Built a touch enabled, browser-based remote controller for a Unity powered 3D environment in javascript, using the OSC protocol.</li>
+							<li>Developed a <a href="http://www.reapwaterloo.ca/panorama.php" target="_blank">360&deg; panorama picture viewer</a> with pin support and customized admin panel in pure <strong>javascript</strong>, <strong>PHP</strong>, HTML, CSS integrating with <strong>Wordpress</strong> and using SQLite.</li>
+							<li>Wrote a script using the <strong>Python</strong> Imaging Library (PIL) to slice a large picture in sets of tiles for different zoom levels.</li>
+							<li>Built a touch enabled, browser-based remote controller for a Unity powered 3D environment in javascript using node.js on the server side, and communicating through the OSC protocol.</li>
+							<li>Developed a 2D art gallery with procedural loading, written in javascript, interacting with a <strong>MySql</strong> database.</li>
+						</ul>
+					</div>
+					<div class="entry">
+						<div class="card left">
+							<h3>Reap Waterloo</h3>
+							<p>Developer, consultant</p>
+							<p>2012 - present</p>
+						</div>
+						<ul>
+							<li>Developed a <a href="http://www.reapwaterloo.ca/panorama.php" target="_blank">360&deg; panorama picture viewer</a> with pin support and customized admin panel in pure <strong>javascript</strong>, <strong>PHP</strong>, HTML, CSS integrating with <strong>Wordpress</strong> and using SQLite.</li>
+							<li>Wrote a script using the <strong>Python</strong> Imaging Library (PIL) to slice a large picture in sets of tiles for different zoom levels.</li>
+							<li>Built a touch enabled, browser-based remote controller for a Unity powered 3D environment in javascript using node.js on the server side, and communicating through the OSC protocol.</li>
+							<li>Developed a 2D art gallery with procedural loading, written in javascript, interacting with a <strong>MySql</strong> database.</li>
 						</ul>
 					</div>
 					<div class="entry">
 						<div class="card left">
 							<h3>Arc Media</h3>
 							<p>Mobile developer</p>
+							<p>February 2013</p>
 						</div>
 						<ul>
-							<li>Designed and developed an HTML5 mobile application that lets golfers find information about the hole they are currently shooting by scanning a QR code. More info at <a href="http://www.golfvideos.ca" target="_blank">golfvideos.ca</a>.</li>
+							<li>Designed and developed an <strong>HTML5</strong> mobile application that lets golfers find information about the hole they are currently shooting by scanning a QR code. More info at <a href="http://www.golfvideos.ca" target="_blank">golfvideos.ca</a>.</li>
 
 						</ul>
 					</div>
@@ -75,6 +92,7 @@
 						<div class="card left">
 							<h3>Screenius Inc.</h3>
 							<p>Agile web developer</p>
+							<p>2011 - 2012</p>
 						</div>
 						<ul>
 							<li>Worked in a team of four on several prototypes of a recommendations centered social game.</li>
@@ -92,9 +110,8 @@
 							<h3>Games</h3>
 						</div>
 						<ul>
-							<li>Wrote a tiny physics engine for the browser in pure javascript; handles collisions with arbitrary elasticity, for any shape.</li>
-
-							<li>Experimented with OpenGL shaders in Lua to create a simulation of how light propagates itself.</li>
+							<li>Wrote a tiny physics engine for the browser in pure javascript able to handle collisions between arbitrarily shaped objects with different elasticities.</li>
+							<li>Experimented with <strong>Lua</strong> (using <strong>L&#214;VE</strong>) to create a simple demo where a character holding a torch discovers a tiny top-down world, projecting shadows of the surrounding objects.</li>
 						</ul>
 					</div>
 					<div class="entry">
@@ -110,7 +127,15 @@
 							<h3>Web Traffic</h3>
 						</div>
 						<ul>
-							<li>Created a sophisticated system for delivering organic visits to websites in javascript, Django, postgreSQL for fun and profit. Includes admin panel and Chrome Extension.</li>
+							<li>Created a sophisticated testing platform that browses a website and executes user specified actions. Aims to collect data on server and client response times based on physical location, browser. Displays the data through a Chrome extension. Written in Python, <strong>Django with PostgreSQL</strong>, javascript </li>
+						</ul>
+					</div>
+					<div class="entry">
+						<div class="card left">
+							<h3>Metamaps</h3>
+						</div>
+						<ul>
+							<li>Contributed to the design, algorithm optimization and logic of the open relational mapping application <a href="http://metamaps.cc" target="_blank">Metamaps</a>, worked in <strog>Ruby on Rails</strong> and javascript.</li>
 						</ul>
 					</div>
 				</div>
@@ -146,33 +171,42 @@
 							<p>C</p>
 						</div>
 					</div>
-					<div class="card"><h3>Frameworks &amp Library</h3></div>
+					<div class="card"><h3>Frameworks &amp; Library</h3></div>
 					<div class="line-chart">
-						<div data-percent="27.5">
+						<div data-percent="22.5">
 							<p>jQuery</p>
 						</div >
-						<div data-percent="27.5">
+						<div data-percent="22.5">
 							<p>Django</p>
 						</div>
-						<div data-percent="20">
+						<div data-percent="15">
+							<p>Node.js</p>
+						</div>
+						<div data-percent="15">
 							<p>Ruby on Rails</p>
 						</div>
-						<div data-percent="13">
+						<div data-percent="12.5">
 							<p>l&#214;ve</p>
 						</div>
-						<div data-percent="12">
+						<div data-percent="12.5">
 							<p>wxWidgets</p>
 						</div>
 					</div>
 					<div class="card"><h3>Software</h3></div>
 					<div class="line-chart">
-						<div data-percent="50">
+						<div data-percent="30">
+							<p>Linux</p>
+						</div >
+						<div data-percent="30">
 							<p>Photoshop</p>
 						</div >
-						<div data-percent="25">
+						<div data-percent="20">
+							<p>Git</p>
+						</div >
+						<div data-percent="10">
 							<p>Illustrator</p>
 						</div>
-						<div data-percent="25">
+						<div data-percent="10">
 							<p>3DS Max</p>
 						</div>
 					</div>
@@ -197,7 +231,7 @@
 					<div class="entry">
 						<div class="left uwaterloo"></div>
 						<div class="right">
-							<p>Candidate for Bachelor of Computer Science, University of Waterloo, Ontario</p>
+							<p>Candidate for Bachelor of Computer Science with minor in Economics, University of Waterloo, Ontario</p>
 							<p>2011 - 2015 (expected)</p>
 						</div>
 					</div>
@@ -207,7 +241,7 @@
 		</div>
 
         <script src="js/main.js"></script>
-
+        <!--
         <script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -217,5 +251,9 @@
 			ga('create', 'UA-39527374-1', 'alessandromarin.com');
 			ga('send', 'pageview');
 		</script>
+		<script src="//static.getclicky.com/js" type="text/javascript"></script>
+		<script type="text/javascript">try{ clicky.init(100596002); }catch(e){}</script>
+		<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100596002ns.gif" /></p></noscript>
+		-->
     </body>
 </html>

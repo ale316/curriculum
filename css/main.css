@@ -24,7 +24,6 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
-
 html, body {
     height: 100%;
 }
@@ -38,7 +37,7 @@ textarea {
 }
 
 body {
-    font-size: 1em;
+    font-size: 14px;
     line-height: 1.4;
     font-family: 'allerregular';
 }
@@ -108,22 +107,22 @@ p, a {
 .page {
     width: 100%;
     min-height: 100%;
-    padding-top: 60px;
-    padding-bottom: 100px;
+    padding-top: 100px;
     overflow: auto;
 }
 
 .inner-container {
-    width: 986px;
-    height: 100%;
+    max-width: 986px;
+    height: auto;
     margin: 0 auto;
+    padding-bottom: 200px;
 }
 
 h1 {
     font-family: 'intro_regular';
     text-shadow: -2px -2px rgba(0,0,0,0.1);
     text-align: left;
-    font-size: 9em;
+    font-size: 131px;
     line-height: 1em;
     text-transform: uppercase;
 }
@@ -162,6 +161,13 @@ ul {
     margin-bottom: -8px;
 }
 
+.card.left h2 {
+    display: inline-block;
+}
+.card div {
+    display: inline-block;
+}
+
 .card p {
     font-size: 1.5em;
 }
@@ -194,13 +200,27 @@ ul {
     margin-bottom: 10px;
 }
 
-#hire-me {
-    background: url('../img/hireme.png') center center no-repeat;
-    width: 138px;
-    height: 138px;
-    position: fixed;
-    top: 80px;
-    left: 80px;
+span.social {
+    font-size: 0.6em;
+    height: 100px;
+    width:  438px;
+    background-color: #fff3c6;
+    height: 100px;                        /* be sure to set height & width */
+    margin: 0;
+    overflow: hidden;
+    display: inline-block;  
+}
+
+span.social a {
+    float: left;
+    display: block;
+    background: url(../img/github_icon.png) center center no-repeat;  /* shows image */
+    height: 100px;                        /* be sure to set height & width */
+    width:  100px;
+    /* Hide the text. */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: visible;
 }
 
 /* ==========================================================================
@@ -223,7 +243,7 @@ ul {
 
 #menu li:nth-child(1) { background-color: #452e3c; }
 #menu li:nth-child(2) { background-color: #ff6b6b; }
-#menu li:nth-child(3) { background-color: #ffb969; }
+#menu li:nth-child(3) { background-color: #FFB03F; }
 #menu li:nth-child(4) { background-color: #f9d43d; }
 #menu li:nth-child(5) { background-color: #4ecdc4; }
 
@@ -243,19 +263,48 @@ ul {
     background-color: #452e3c;
 }
 
+#objective .left {
+    text-align: left;
+    width: 60%;
+}
+
+#objective .left p {
+    margin-bottom: 15px;
+}
+
+#objective .right {
+    width: 35%;
+}
+
 #objective .card {
+    padding: 25px;
     color: #452e3c;
     text-align: left;
-    width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
 }
 
-#objective .card a{
+#objective .card h2 {
+}
+
+#objective .card a {
     color: #452e3c;
 }
 
-#objective .card h2{
-    margin-bottom: -10px;
+#objective .card p {
+    margin: 0;
+}
+
+#objective .card .right {
+    width: auto;
+    padding-right: 10px;
+}
+.social-link {
+    font-family: 'intro_regular';
+}
+
+#objective .card h3{
+    margin-top: -10px;
 }
 
 #objective img {
@@ -278,19 +327,24 @@ ul {
     color: #ff6b6b;
 }
 
+#experience .card p:nth-child(3) {
+    margin-top: -5px;
+    font-size: 1.2em;
+}
+
 /* ==========================================================================
    Page 3 : Projects;
    ========================================================================== */
 
 #projects {
-    background-color: #ffb969;
+    background-color: #FFB03F;
 }
 
 #projects .card {
     width: 28%;
     margin-top: 20px;
     margin-left:12px;
-    color: #ffb969;
+    color: #FFB03F;
 }
 
 /* ==========================================================================
