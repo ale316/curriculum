@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'intro_regular';
+    src: url('intro-webfont.eot');
+    src: url('intro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('intro-webfont.woff') format('woff'),
+         url('intro-webfont.ttf') format('truetype'),
+         url('intro-webfont.svg#intro_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: 'Alegreya', serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-size: 26px;
+    background-color: #FFF6D6;
+    color: #120802;
+    h1, h2, h3 {
+        margin: 0;
+        letter-spacing: 0;
+    }
+    p {
+        margin: 0;
+    }
+    .pure-g-r > div {
+        box-sizing: border-box; /* allows padding on elems */
+    }
+    header {
+        background-color: #120802;
+        color: #FFF6D6;
+        width: 100%; min-height: 100%;
+        div.header-container {
+            max-width: 960px;
+            height: 100%;
+            margin: 0 auto;
+            h1 {
+                margin-top: 100px;
+                font-size: 5.18em;
+                line-height: 0.9em;
+                font-family: 'Montserrat', sans-serif;
+                text-shadow: -2px -2px rgba(0,0,0,0.1);
+                text-transform: uppercase; /* unnecessary */
+                span.surname {
+                    margin-left: -24px;
+                    font-size: 2.08em;
+                    line-height: 0.75em;
+                }
+            }
+        }
+        
+    }
+    #content {
+        max-width: 1024px;
+        margin: 50px auto;
+        .tldr {
+            padding-right: 18px;
+            text-align: justify;
+        }
+        .photo {
+            .frame {
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+}

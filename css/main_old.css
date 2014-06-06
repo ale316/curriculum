@@ -1,0 +1,559 @@
+@font-face {
+    font-family: 'intro_regular';
+    src: url('intro-webfont.eot');
+    src: url('intro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('intro-webfont.woff') format('woff'),
+         url('intro-webfont.ttf') format('truetype'),
+         url('intro-webfont.svg#intro_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'allerregular';
+    src: url('aller_rg-webfont.eot');
+    src: url('aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('aller_rg-webfont.woff') format('woff'),
+         url('aller_rg-webfont.ttf') format('truetype'),
+         url('aller_rg-webfont.svg#allerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+html, body {
+    height: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #fff3c6;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: 'allerregular';
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   General Styles
+   ========================================================================== */
+
+h1, h2, p {
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    font-family: 'intro_regular';
+}
+
+p, a {
+    font-size: 1.8em;
+}
+
+.page {
+    width: 100%;
+    min-height: 100%;
+    padding-top: 100px;
+    overflow: auto;
+}
+
+.inner-container {
+    max-width: 986px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+
+h1 {
+    font-family: 'intro_regular';
+    text-shadow: -2px -2px rgba(0,0,0,0.1);
+    text-align: left;
+    font-size: 131px;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'intro_regular';
+    font-size: 2.5em;
+}
+
+h3 {
+    font-family: 'intro_regular';
+    font-size: 1.8em;
+}
+
+.card { 
+    background-color: #fff3c6;
+    padding: 20px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: -8px;
+}
+
+.card.left h2 {
+    display: inline-block;
+}
+.card div {
+    display: inline-block;
+}
+
+.card p {
+    font-size: 1.5em;
+}
+
+.entry ul {
+    margin: 0;
+    margin-top: 15px;
+    width: 60%;
+    float: right;
+    padding-left: 1em;
+    text-indent: -1.5em;
+}
+
+.entry ul li:before {
+    content: "\02B \020";
+}
+
+.entry a {
+    color: #fff3c6;
+    font-size: 1em;
+}
+
+.entry {
+    margin-bottom: 20px;
+    clear: both;
+}
+
+.entry li {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+span.social {
+    font-size: 0.6em;
+    height: 100px;
+    width:  438px;
+    background-color: #fff3c6;
+    height: 100px;                        /* be sure to set height & width */
+    margin: 0;
+    overflow: hidden;
+    display: inline-block;  
+}
+
+span.social a {
+    float: left;
+    display: block;
+    background: url(../img/github_icon.png) center center no-repeat;  /* shows image */
+    height: 100px;                        /* be sure to set height & width */
+    width:  100px;
+    /* Hide the text. */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+/* ==========================================================================
+   Menu
+   ========================================================================== */
+
+#menu {
+    font-family: 'intro_regular';
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+
+#menu li {
+    width: 20%;
+    float: left;
+}
+
+#menu li:nth-child(1) { background-color: #452e3c; }
+#menu li:nth-child(2) { background-color: #ff6b6b; }
+#menu li:nth-child(3) { background-color: #FFB03F; }
+#menu li:nth-child(4) { background-color: #f9d43d; }
+#menu li:nth-child(5) { background-color: #4ecdc4; }
+
+#menu a {
+    text-shadow: -1px -1px rgba(0,0,0,0.2);
+    display: block;
+    padding: 0.8em;
+    color: #fff3c6;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   Page 1 : Ojective;
+   ========================================================================== */
+
+#objective {
+    background-color: #452e3c;
+}
+
+#objective .left {
+    text-align: left;
+    width: 60%;
+}
+
+#objective .left p {
+    margin-bottom: 15px;
+}
+
+#objective .right {
+    width: 35%;
+}
+
+#objective .card {
+    padding: 25px;
+    color: #452e3c;
+    text-align: left;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+#objective .card h2 {
+}
+
+#objective .card a {
+    color: #452e3c;
+}
+
+#objective .card p {
+    margin: 0;
+}
+
+#objective .card .right {
+    width: auto;
+    padding-right: 10px;
+}
+.social-link {
+    font-family: 'intro_regular';
+}
+
+#objective .card h3{
+    margin-top: -10px;
+}
+
+#objective img {
+    padding: 0;
+    margin: 0;
+}
+
+/* ==========================================================================
+   Page 2 : Experience;
+   ========================================================================== */
+
+#experience {
+    background-color: #ff6b6b;
+}
+
+#experience .card {
+    width: 28%;
+    margin-top: 20px;
+    margin-left:12px;
+    color: #ff6b6b;
+}
+
+#experience .card p:nth-child(3) {
+    margin-top: -5px;
+    font-size: 1.2em;
+}
+
+/* ==========================================================================
+   Page 3 : Projects;
+   ========================================================================== */
+
+#projects {
+    background-color: #FFB03F;
+}
+
+#projects .card {
+    width: 28%;
+    margin-top: 20px;
+    margin-left:12px;
+    color: #FFB03F;
+}
+
+/* ==========================================================================
+   Page 4 : skills;
+   ========================================================================== */
+
+#skills {
+    background-color: #f9d43d;
+}
+
+#skills .card {
+    color: #f9d43d;
+    clear: both;
+}
+
+.line-chart {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.line-chart div {
+    font-family: 'intro_regular';
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 0.6em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.line-chart div:nth-child(1) { background-color: #FF6739;}
+.line-chart div:nth-child(2) { background-color: #FFB03F;}
+.line-chart div:nth-child(3) { background-color: #253D50;}
+.line-chart div:nth-child(4) { background-color: #6EC2EA;}
+.line-chart div:nth-child(5) { background-color: #FF6739;}
+.line-chart div:nth-child(6) { background-color: #FFB03F;}
+.line-chart div:nth-child(7) { background-color: #253D50;}
+.line-chart div:nth-child(8) { background-color: #6EC2EA;}
+
+/* ==========================================================================
+   Page 5 : Education;
+   ========================================================================== */
+
+#education {
+    background-color: #4ecdc4;
+}
+
+.uwaterloo {
+    margin-left: 110px;
+    margin-top: 30px;
+    width: 175px;
+    height: 210px;
+    background: url('../img/uwaterloologo.png') center center no-repeat;
+}
+
+#education p {
+    font-size: 1.5em;   
+}
+
+#education .right {
+    width: 60%;
+    margin-top: 70px;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

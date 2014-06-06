@@ -11,139 +11,150 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Alegreya:400,700/Clear+Sans:700">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
         <link rel="stylesheet" href="css/main.css">
 
-		<script src="js/vendor/jquery.min.js" ></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/vendor/move.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" ></script>
     </head>
     <body>
-		<div id="container">
+    	<header>
+			<div class="pure-g-r header-container">
+				<h1>Alessandro <span class="surname">Marin</span></h1> <!--<span class="social"><a class="github" href="#">github</a><a class="linkedin" href="#">linkedin</a></span>-->
+			</div>
+		</header>
+		<div id="content" class="pure-g-r">
 			<!--<div id="hire-me"></div>-->
-			<div id="menu">
+			<div class="tldr pure-u-1-2">
+				<h2>TL;DR</h2>
+				<p><strong>Full-stack</strong> developer with a sense of design. Made in Italy and moved to Canada to pursue my undergrad in Computer Science with minor in Economics at the <strong>University of Waterloo</strong>. I speak <strong>javascript</strong> better than English and I have extensive experience writing efficient and elegant responsive apps using <strong>node.js</strong>, express.js, <strong>mongoDB</strong>, HTML &amp; CSS, LESS, <strong>jQuery</strong>, PHP, Laravel, <strong>MySQL</strong> and more. <strong>If I don't know it, I will learn it today.</strong></p>
+				<!--<p><strong>I am a full stack dev</strong> with a sense of design. Made in Italy and currently studying at the University of Waterloo. <strong>I love</strong> learning, being challenged and making things. I also have a passion for travelling, good food and great music.</p>-->
+			</div>
+
+			<!--<div class="photo pure-u-1-2">
+				<div class="frame">
+					<img src="img/blackandwhiteportrait.jpg">
+				</div>
+			</div>-->
+
+
+			<!--
+			<div class="card left pure-u-1-5">
+				<h2>Contact</h2>
+				<div class="right">
+					<a href="mailto:amarin@uwaterloo.ca">amarin@uwaterloo.ca</a>
+					<p>+1 226 978 4775</p>
+				</div>
+			</div>
+			-->
+			<h2 class="pure-u-1">Experience</h2>
+			<div class="card left pure-u-1-4">
+				<h3>Sixth Monkey</h3>
+				<p>Co-founder, Lead Dev</p>
+				<p>Dec 2013 - present</p>
+			</div>
+			<div class="pure-u-3-4">
 				<ul>
-					<li><a href="#objective">Objective</a></li>
-					<li><a href="#experience">Experience</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#education">Education</a></li>
+					<li>Working in a team of two on the development of a zero-knowledge, cross-device solution for hosting, organizing and sharing large libraries of high quality photos. Currently in <a href="http://pb.sixthmonkey.com/" target="_blank">closed alpha.</a></li>
+					<li>Implemented an album uploader capable of generating thumbnails, gathering EXIF data from a photo and performing <strong>end-to-end cryptography</strong> using CryptoJS <strong>fully on the client side</strong>; successively submitting the encrypted data to <strong>Amazon S3.</strong></li>
+					<li>Built an event-driven javascript framework with no dependencies, using <strong><a href="http://pjax.heroku.com/" target="_blank">PJAX</a></strong> to provide lightning fast page loads.</li>
+					<li>Implemented the back-end in Node.js, using Restify.js to provide both API and PJAX endpoints. Server-side templating done using dot.js</li>
 				</ul>
 			</div>
-			<div id="objective" class="page">
-				<div class="inner-container">
-					<h1>Alessandro<br>Marin <span class="social"><a class="github" href="#">github</a><a class="linkedin" href="#">linkedin</a></span></h1>
-					<div class="left">
-						<p><span>I am a full stack dev</span> with a sense of design. Made in Italy and currently studying at the University of Waterloo.</p>
-						<p><span>I love</span> learning, being challenged and making things. I also have a passion for travelling, good food and great music.</p>
-					</div>
-					<div class="card left">
-						<h2>Contact</h2>
-						<div class="right">
-							<a href="mailto:amarin@uwaterloo.ca">amarin@uwaterloo.ca</a>
-							<!--<p>+1 226 978 4775</p>-->
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			
-			<div id="experience" class="page">
-				<div class="inner-container">
-					<h1>Experience</h1>
-					<div class="entry">
-						<div class="card left">
-							<h3>Quarry</h3>
-							<p>Creative coder</p>
-							<p>May 2013 - present</p>
-						</div>
-						<ul>
-							<li>Developed a <a href="http://www.reapwaterloo.ca/panorama.php" target="_blank">360&deg; panorama picture viewer</a> with pin support and customized admin panel in pure <strong>javascript</strong>, <strong>PHP</strong>, HTML, CSS integrating with <strong>Wordpress</strong> and using SQLite.</li>
-							<li>Wrote a script using the <strong>Python</strong> Imaging Library (PIL) to slice a large picture in sets of tiles for different zoom levels.</li>
-							<li>Built a touch enabled, browser-based remote controller for a Unity powered 3D environment in javascript using node.js on the server side, and communicating through the OSC protocol.</li>
-							<li>Developed a 2D art gallery with procedural loading, written in javascript, interacting with a <strong>MySql</strong> database.</li>
-						</ul>
-					</div>
-					<div class="entry">
-						<div class="card left">
-							<h3>Reap Waterloo</h3>
-							<p>Developer, consultant</p>
-							<p>2012 - present</p>
-						</div>
-						<ul>
-							<li>Developed a <a href="http://www.reapwaterloo.ca/panorama.php" target="_blank">360&deg; panorama picture viewer</a> with pin support and customized admin panel in pure <strong>javascript</strong>, <strong>PHP</strong>, HTML, CSS integrating with <strong>Wordpress</strong> and using SQLite.</li>
-							<li>Wrote a script using the <strong>Python</strong> Imaging Library (PIL) to slice a large picture in sets of tiles for different zoom levels.</li>
-							<li>Built a touch enabled, browser-based remote controller for a Unity powered 3D environment in javascript using node.js on the server side, and communicating through the OSC protocol.</li>
-							<li>Developed a 2D art gallery with procedural loading, written in javascript, interacting with a <strong>MySql</strong> database.</li>
-						</ul>
-					</div>
-					<div class="entry">
-						<div class="card left">
-							<h3>Arc Media</h3>
-							<p>Mobile developer</p>
-							<p>February 2013</p>
-						</div>
-						<ul>
-							<li>Designed and developed an <strong>HTML5</strong> mobile application that lets golfers find information about the hole they are currently shooting by scanning a QR code. More info at <a href="http://www.golfvideos.ca" target="_blank">golfvideos.ca</a>.</li>
 
-						</ul>
-					</div>
-					<div class="entry">
-						<div class="card left">
-							<h3>Screenius Inc.</h3>
-							<p>Agile web developer</p>
-							<p>2011 - 2012</p>
-						</div>
-						<ul>
-							<li>Worked in a team of four on several prototypes of a recommendations centered social game.</li>
-							<li>Developed an efficient, custom mobile framework.</li>
-						</ul>
-					</div>
-				</div>
+			<div class="card left pure-u-1-4">
+				<h3>Quarry</h3>
+				<p>Creative coder</p>
+				<p>May 2013 - present</p>
 			</div>
-			
-			<div id="projects" class="page">
+			<div class="pure-u-3-4">
+				<ul>
+					<li>Worked in close contact with various sized teams of developers and designers to deliver pixel-perfect, responsive web apps with complex user interaction for Fortune 500 clients. <span class="long-story">Basic front-end stack with HTML5&amp;CSS3 (Bootstrap) and jQuery, acquiring deep knowledge of cross-browser compatibility issues and solutions (supporting IE7+ to the death).</span></li>
+					<li>Wrote many plugins for Concrete5 (PHP CMS based on Zend) with efficiency and reusability in mind. <span class="long-story">Examples are: middleware to enforce password entropy rules upon user registration, fully customizable, with ability to set expiration dates and prevent password reuse; a routing module to redirect users to the correct site subset given a token, maintaining the user session among all subdomains (with crazy workaround to support IE7);</span></li>
+				</ul>
+			</div>
+			<div class="card left pure-u-1-4">
+				<h3>Reap Waterloo</h3>
+				<p>Developer, consultant</p>
+				<p>2012 - present</p>
+			</div>
+			<div class="pure-u-3-4">			
+				<ul>
+					<li>Developed a <a href="http://www.reapwaterloo.ca/panorama.php" target="_blank">360&deg; panorama picture viewer</a> with pin support and customized admin panel in pure <strong>javascript</strong>, <strong>PHP</strong>, HTML, CSS integrating with <strong>Wordpress</strong> and using SQLite.</li>
+					<li>Wrote a script using the <strong>Python</strong> Imaging Library (PIL) to slice a large picture in sets of tiles for different zoom levels.</li>
+					<li>Built a touch enabled, browser-based remote controller for a Unity powered immersive 3D environment in javascript using Node.js and communicating through the OSC protocol.</li>
+					<li>Developed a 2D art gallery with procedural loading, written in javascript and PHP, interacting with a <strong>MySql</strong> database.</li>
+				</ul>
+			</div>
+
+
+			<div class="card left pure-u-1-4">
+				<h3>Arc Media</h3>
+				<p>Mobile developer</p>
+				<p>Feb 2013</p>
+			</div>
+			<div class="pure-u-3-4">
+				<ul>
+					<li>Designed and developed an <strong>HTML5</strong> mobile-first, responsive web app that lets golfers find information about the hole they are currently shooting by scanning a QR code. More info at <a href="http://www.golfvideos.ca" target="_blank">golfvideos.ca</a>.</li>
+
+				</ul>
+			</div>
+
+			<div class="card left pure-u-1-4">
+				<h3>Screenius Inc.</h3>
+				<p>Agile web developer</p>
+				<p>2011 - 2012</p>
+			</div>
+			<div class="pure-u-3-4">
+				<ul>
+					<li>Worked in a team of four on several prototypes of a recommendations centered social game.</li>
+					<li>Developed an efficient, custom mobile framework in pure javascript.</li>
+				</ul>
+			</div>
+		</div>
+			<div id="projects" class="page pure-u">
 				<div class="inner-container">
-					<h1>Projects</h1>
-					<div class="entry">
-						<div class="card left">
+					<h2>Projects</h2>
+					<div class="entry pure-g">
+						<div class="card left pure-u-1-5">
 							<h3>Games</h3>
 						</div>
-						<ul>
+						<ul class="pure-u-4-5">
 							<li>Wrote a tiny physics engine for the browser in pure javascript able to handle collisions between arbitrarily shaped objects with different elasticities.</li>
 							<li>Experimented with <strong>Lua</strong> (using <strong>L&#214;VE</strong>) to create a simple demo where a character holding a torch discovers a tiny top-down world, projecting shadows of the surrounding objects.</li>
 						</ul>
 					</div>
-					<div class="entry">
-						<div class="card left">
+					<div class="entry pure-g">
+						<div class="card left pure-u-1-5">
 							<h3>Bots</h3>
 						</div>
-						<ul>
+						<ul class="pure-u-4-5">
 							<li>In the process of writing an open source bot in Python that crawls the web to find jobs given position, location and a set of keywords.</li>
 						</ul>
 					</div>
-					<div class="entry">
-						<div class="card left">
+					<div class="entry pure-g">
+						<div class="card left pure-u-1-5">
 							<h3>Web Traffic</h3>
 						</div>
-						<ul>
+						<ul class="pure-u-4-5">
 							<li>Created a sophisticated testing platform that browses a website and executes user specified actions. Aims to collect data on server and client response times based on physical location, browser. Displays the data through a Chrome extension. Written in Python, <strong>Django with PostgreSQL</strong>, javascript </li>
 						</ul>
 					</div>
-					<div class="entry">
-						<div class="card left">
+					<div class="entry pure-g">
+						<div class="card left pure-u-1-5">
 							<h3>Metamaps</h3>
 						</div>
-						<ul>
+						<ul class="pure-u-4-5">
 							<li>Contributed to the design, algorithm optimization and logic of the open relational mapping application <a href="http://metamaps.cc" target="_blank">Metamaps</a>, worked in <strog>Ruby on Rails</strong> and javascript.</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			
-			<div id="skills" class="page">
+			<div id="skills" class="page pure-u">
 				<div class="inner-container">
-					<h1>Skills</h1>
+					<h2>Skills</h2>
 					<div class="card"><h3>Programming</h3></div>
 					<div class="line-chart">
 						<div data-percent="25">
@@ -225,10 +236,10 @@
 				</div>
 			</div>
 
-			<div id="education" class="page">
+			<div id="education" class="page pure-u">
 				<div class="inner-container">
-					<h1>Education</h1>
-					<div class="entry">
+					<h2>Education</h2>
+					<div class="entry pure-g">
 						<div class="left uwaterloo"></div>
 						<div class="right">
 							<p>Candidate for Bachelor of Computer Science with minor in Economics, University of Waterloo, Ontario</p>
